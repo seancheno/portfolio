@@ -1,0 +1,94 @@
+.Page {
+}
+
+.Header {
+	height: 100%;
+	padding: 3% 3% 0% 3%;
+	padding-bottom: 90px;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	background-color: rgb(255, 255, 255);
+}
+
+.Container {
+	position: relative;
+	display: flex;
+	flex-flow: row wrap;
+	width: 90%;
+	max-width: 1400px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.Content {
+	background-color: rgb(248, 248, 248);
+	width: 100%;
+	box-sizing: border-box;
+	padding: 3% 3% 0% 3%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+h1 {
+	margin-top: 1.2em;
+	margin-bottom: 2.25em;
+	line-height: 66px;
+	position: relative;
+	max-width: 840px;
+	animation: fade 0.4s ease-in-out;
+}
+
+@media (max-width: 655px) {
+	h1 {
+		margin-bottom: 0em;
+		font-size: 29px;
+		line-height: 53px;
+	}
+}
+
+h2 {
+	font-size: 20px;
+}
+
+span {
+	color: rgb(56, 118, 211);
+}
+
+.CircleSeperator {
+	width: 7px;
+	height: 7px;
+	margin: 5px 0px 15px 0px;
+	border-radius: 50%;
+	background-color: #55add7;
+}
+
+.Footer {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+}
+
+.Footer img {
+	height: 60px;
+	width: 60px;
+	padding-left: 0px;
+	padding-top: 0px;
+	align-self: center;
+}
+
+.Footer h3 {
+	color: #838383;
+	font-weight: 300;
+}
+
+@keyframes fade {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 100;
+	}
+}
