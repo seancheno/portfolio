@@ -6,6 +6,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import ProjectBox from "../../ProjectBox/ProjectBox";
 import ReactLogo from "../../../assets/images/react-logo.png";
+import Job from "../../Job/Job";
+import CompanySVG from "../../UI/SVG/CompanySVG";
 class Page extends Component {
 	render() {
 		return (
@@ -15,27 +17,20 @@ class Page extends Component {
 					<div className={classes.Container}>
 						<h1>
 							I’m Sean Chenoweth, a <span>Full-Stack</span> developer with a
-							taste for <span>UX UI</span> design. Born in Aspen and currently
-							living in San Francisco.
+							taste for <span style={{ color: "#f87a21" }}>UX UI</span> design.
+							Born in Aspen and currently living in San Francisco.
 						</h1>
 					</div>
+
+					<div className={classes.JobContainer}>
+						<Job company={"intuit"} label={"Currently"}></Job>
+						<Job company={"qualify"} label={"Formerly"}></Job>
+					</div>
 				</div>
+
 				<div className={classes.Content}>
 					<h2>Projects</h2>
 					<FontAwesomeIcon color={"#55add7"} icon={"arrow-alt-circle-down"} />
-					<ProjectBox
-						imageUrl={"http://seancheno.com/images/qualify.jpg"}
-						gifUrl={"http://seancheno.com/images/koala.gif"}
-						imageAlt={"Qualify"}
-						title={"Qualify - College Dating"}
-						description={
-							"A quiz based dating app on IOS that lets you send the first message after you pass someone’s three question quiz. The app is only available for .edu emails and has recieved over 400,000 questions answered and created 10,000 matches between college students."
-						}
-						tech={["React Native", "CSS3/SASS", "ES6/ES7", "Redux"]}
-						demoButtonUrl={
-							"https://apps.apple.com/us/app/qualify-college-dating/id967428833"
-						}
-					/>
 					<ProjectBox
 						imageUrl={"http://seancheno.com/images/dna-splash.jpg"}
 						imageAlt={"Dna Splash"}
@@ -55,6 +50,19 @@ class Page extends Component {
 						]}
 						demoButtonUrl={"http://dnasplash.com"}
 						codeButtonUrl={"https://github.com/seancheno/dna-splash-client"}
+					/>
+					<ProjectBox
+						imageUrl={"http://seancheno.com/images/qualify.jpg"}
+						gifUrl={"http://seancheno.com/images/koala.gif"}
+						imageAlt={"Qualify"}
+						title={"Qualify - College Dating"}
+						description={
+							"A quiz based dating app on IOS that lets you send the first message after you pass someone’s three question quiz. The app is only available for .edu emails and has recieved over 400,000 questions answered and created 10,000 matches between college students."
+						}
+						tech={["React Native", "CSS3/SASS", "ES6/ES7", "Redux"]}
+						demoButtonUrl={
+							"https://apps.apple.com/us/app/qualify-college-dating/id967428833"
+						}
 					/>
 					<ProjectBox
 						imageUrl={"http://seancheno.com/images/property-management.jpg"}
@@ -84,7 +92,7 @@ class Page extends Component {
 						<img src={ReactLogo} alt={"React Logo"} />
 						<h3>Powered By React</h3>
 						<a href="https://github.com/seancheno/portfolio" target="_blank">
-							<h4 style={{margin: '0px'}}>Github</h4>
+							<h4 style={{ margin: "0px" }}>Github</h4>
 						</a>
 						<div style={{ margin: "25px 0px" }} />
 					</div>

@@ -1,0 +1,24 @@
+.Job {
+	width: 25%;
+}
+
+@media (max-width: 440px) {
+	.Job {
+		width: 100%;
+		margin-bottom: -40px;
+	}
+}
+
+.Job h3 {
+	font-style: italic;
+	font-weight: 100;
+	transform: translate(5px, 12px);
+}
+
+.Img {
+	width: 100%;
+	height: 100%;
+	padding-left: 0px;
+	padding-top: 0px;
+	align-self: center;
+}
